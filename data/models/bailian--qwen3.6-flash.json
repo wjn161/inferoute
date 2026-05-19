@@ -1,0 +1,90 @@
+{
+  "model_id": "bailian/qwen3.6-flash",
+  "display_name": "Qwen3.6 Flash",
+  "brand": "Qwen",
+  "model_type": "chat",
+  "description": "Qwen3.6原生视觉语言系列Flash模型，模型效果相较3.5-Flash显著提升。本模型重点提升agentic coding能力（在多项代码智能体基准上大幅超越前代）、数学推理和代码推理能力；视觉方面在空间智能能力上显著增强，物体定位与目标检测提升尤为突出。",
+  "release_date": null,
+  "specifications": {
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 64000,
+    "max_output_tokens_display": "64K"
+  },
+  "capabilities": [
+    "chat",
+    "function_calling",
+    "prompt_caching",
+    "reasoning",
+    "vision",
+    "video"
+  ],
+  "input_modalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.25,
+      "unit": "per_million_tokens",
+      "display": "$0.25/M"
+    },
+    "output_token": {
+      "price": 1.5,
+      "unit": "per_million_tokens",
+      "display": "$1.5/M"
+    },
+    "cache_read": {
+      "price": 0.025,
+      "unit": "per_million_tokens",
+      "display": "$0.025/M"
+    },
+    "cache_write": {
+      "price": 0.31,
+      "unit": "per_million_tokens",
+      "display": "$0.31/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "bailian/qwen3.6-27b",
+        "display_name": "Qwen3.6 27B"
+      },
+      {
+        "model_id": "bailian/qwen3.6-max-preview",
+        "display_name": "Qwen3.6 Max Preview"
+      },
+      {
+        "model_id": "bailian/qwen3.6-plus",
+        "display_name": "Qwen3.6 Plus"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek V4 Flash"
+      },
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek V4 Pro"
+      },
+      {
+        "model_id": "openai/gpt-5.5",
+        "display_name": "OpenAI: GPT-5.5"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:01:45.876Z"
+}

@@ -1,0 +1,76 @@
+{
+  "model_id": "bailian/qwen-vl-max",
+  "display_name": "Qwen VL Max",
+  "brand": "Qwen",
+  "model_type": "chat",
+  "description": "Alibaba Qwen VL Max via Dashscope. Top-tier vision-language model for multimodal tasks including image understanding and visual reasoning.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 128000,
+    "context_window_display": "128K",
+    "max_output_tokens": 8000,
+    "max_output_tokens_display": "8K"
+  },
+  "capabilities": [
+    "chat",
+    "function_calling",
+    "vision"
+  ],
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.23,
+      "unit": "per_million_tokens",
+      "display": "$0.23/M"
+    },
+    "output_token": {
+      "price": 0.58,
+      "unit": "per_million_tokens",
+      "display": "$0.58/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "bailian/qwen3.6-27b",
+        "display_name": "Qwen3.6 27B"
+      },
+      {
+        "model_id": "bailian/qwen3.6-max-preview",
+        "display_name": "Qwen3.6 Max Preview"
+      },
+      {
+        "model_id": "bailian/qwen3.6-flash",
+        "display_name": "Qwen3.6 Flash"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek V4 Flash"
+      },
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek V4 Pro"
+      },
+      {
+        "model_id": "openai/gpt-5.5",
+        "display_name": "OpenAI: GPT-5.5"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:02:08.498Z"
+}

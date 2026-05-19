@@ -1,0 +1,81 @@
+{
+  "model_id": "bailian/qwen3-coder-flash",
+  "display_name": "Qwen3 Coder Flash",
+  "brand": "Qwen",
+  "model_type": "chat",
+  "description": "基于Qwen3的代码生成模型，继承Qwen3-Coder-Plus的coding agent能力，支持多轮工具交互，重点优化仓库级别理解能力并增加工具调用稳定性。",
+  "release_date": null,
+  "specifications": {
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 64000,
+    "max_output_tokens_display": "64K"
+  },
+  "capabilities": [
+    "chat",
+    "function_calling",
+    "prompt_caching",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.5,
+      "unit": "per_million_tokens",
+      "display": "$0.5/M"
+    },
+    "output_token": {
+      "price": 2.5,
+      "unit": "per_million_tokens",
+      "display": "$2.5/M"
+    },
+    "cache_read": {
+      "price": 0.06,
+      "unit": "per_million_tokens",
+      "display": "$0.06/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "bailian/qwen3.6-27b",
+        "display_name": "Qwen3.6 27B"
+      },
+      {
+        "model_id": "bailian/qwen3.6-max-preview",
+        "display_name": "Qwen3.6 Max Preview"
+      },
+      {
+        "model_id": "bailian/qwen3.6-flash",
+        "display_name": "Qwen3.6 Flash"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek V4 Flash"
+      },
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek V4 Pro"
+      },
+      {
+        "model_id": "openai/gpt-5.5",
+        "display_name": "OpenAI: GPT-5.5"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:02:01.877Z"
+}

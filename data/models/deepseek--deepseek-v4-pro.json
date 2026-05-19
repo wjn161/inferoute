@@ -1,0 +1,36 @@
+{
+  "model_id": "deepseek/deepseek-v4-pro",
+  "display_name": "DeepSeek V4 Pro",
+  "brand": "DeepSeek",
+  "model_type": "chat",
+  "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding, and long-horizon agent workflows, with strong performance across knowledge, math, and software engineering benchmarks.",
+  "release_date": "2026-04-24",
+  "specifications": {
+    "context_window": null,
+    "context_window_display": null,
+    "max_output_tokens": null,
+    "max_output_tokens_display": null
+  },
+  "capabilities": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {},
+  "related_models": {
+    "same_brand": [],
+    "similar": []
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:18:53.770Z"
+}

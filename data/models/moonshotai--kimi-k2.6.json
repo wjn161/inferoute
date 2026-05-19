@@ -1,0 +1,75 @@
+{
+  "model_id": "moonshotai/kimi-k2.6",
+  "display_name": "MoonshotAI: Kimi K2.6",
+  "brand": "MoonshotAI",
+  "model_type": "chat",
+  "description": "Kimi K2.6 是 Kimi 最新最智能的模型，Kimi K2.6 的通用 Agent、代码、视觉理解等综合能力得到全面提升，其中在博士级难度的完整版人类最后的考试（Humanity’s Last Exam）、在考察模型真实软件工程能力的 SWE-Bench Pro、评估 Agent 深度检索能力的 DeepSearchQA 等基准测试中均取得行业领先的成绩，同时支持文本、图片与视频输入，思考与非思考模式，对话与 Agent 任务。",
+  "release_date": null,
+  "specifications": {
+    "context_window": 262000,
+    "context_window_display": "262K",
+    "max_output_tokens": 262000,
+    "max_output_tokens_display": "262K"
+  },
+  "capabilities": [
+    "chat",
+    "function_calling",
+    "prompt_caching",
+    "reasoning",
+    "vision"
+  ],
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.95,
+      "unit": "per_million_tokens",
+      "display": "$0.95/M"
+    },
+    "output_token": {
+      "price": 4,
+      "unit": "per_million_tokens",
+      "display": "$4/M"
+    },
+    "cache_read": {
+      "price": 0.16,
+      "unit": "per_million_tokens",
+      "display": "$0.16/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "moonshotai/kimi-k2.5",
+        "display_name": "MoonshotAI: Kimi K2.5"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek V4 Flash"
+      },
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek V4 Pro"
+      },
+      {
+        "model_id": "openai/gpt-5.5",
+        "display_name": "OpenAI: GPT-5.5"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:03:08.672Z"
+}

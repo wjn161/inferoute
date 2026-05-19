@@ -1,0 +1,85 @@
+{
+  "model_id": "bailian/qwen-flash",
+  "display_name": "Qwen Flash",
+  "brand": "Qwen",
+  "model_type": "chat",
+  "description": "Alibaba Qwen Flash via Dashscope. Ultra-fast inference for latency-sensitive tasks. Lowest cost option in the Qwen family.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 32000,
+    "max_output_tokens_display": "32K"
+  },
+  "capabilities": [
+    "chat",
+    "function_calling",
+    "prompt_caching"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.022,
+      "unit": "per_million_tokens",
+      "display": "$0.022/M"
+    },
+    "output_token": {
+      "price": 0.22,
+      "unit": "per_million_tokens",
+      "display": "$0.22/M"
+    },
+    "cache_read": {
+      "price": 0.0043,
+      "unit": "per_million_tokens",
+      "display": "$0.0043/M"
+    },
+    "cache_write": {
+      "price": 0.027,
+      "unit": "per_million_tokens",
+      "display": "$0.027/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "bailian/qwen3.6-27b",
+        "display_name": "Qwen3.6 27B"
+      },
+      {
+        "model_id": "bailian/qwen3.6-max-preview",
+        "display_name": "Qwen3.6 Max Preview"
+      },
+      {
+        "model_id": "bailian/qwen3.6-flash",
+        "display_name": "Qwen3.6 Flash"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek V4 Flash"
+      },
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek V4 Pro"
+      },
+      {
+        "model_id": "openai/gpt-5.5",
+        "display_name": "OpenAI: GPT-5.5"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:02:04.538Z"
+}

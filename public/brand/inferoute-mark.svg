@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Inferoute minimal arrow icon</title>
+  <defs>
+    <linearGradient id="mid" x1="20" y1="64" x2="112" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6A00FF"/>
+      <stop offset="0.35" stop-color="#3652FF"/>
+      <stop offset="0.72" stop-color="#11A7F1"/>
+      <stop offset="1" stop-color="#17CBE8"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- top route -->
+    <circle cx="24" cy="38" r="7" fill="#FFFFFF"/>
+    <path d="M31 38H58C66 38 71 41 76 47L89 59" stroke="#FFFFFF" stroke-width="11"/>
+
+    <!-- bottom route -->
+    <circle cx="24" cy="90" r="7" fill="#FFFFFF"/>
+    <path d="M31 90H58C66 90 71 87 76 81L89 69" stroke="#FFFFFF" stroke-width="11"/>
+
+    <!-- middle route -->
+    <circle cx="24" cy="64" r="7" fill="#6A00FF"/>
+    <path d="M31 64H97" stroke="url(#mid)" stroke-width="11"/>
+  </g>
+
+  <!-- arrowhead -->
+  <path d="M95 56L114 64L95 72C92 73.5 88 71.3 88 67.8V60.2C88 56.7 92 54.5 95 56Z" fill="#17CBE8"/>
+</svg>

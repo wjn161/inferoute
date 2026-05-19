@@ -1,0 +1,66 @@
+{
+  "model_id": "bailian/text-embedding-v4",
+  "display_name": "Qwen Text Embedding V4",
+  "brand": "Qwen",
+  "model_type": "embedding",
+  "description": "Alibaba Text Embedding V4 via Dashscope. Latest embedding model with improved accuracy, 1024 dimensions, and",
+  "release_date": null,
+  "specifications": {
+    "context_window": 8000,
+    "context_window_display": "8K",
+    "max_output_tokens": null,
+    "max_output_tokens_display": null
+  },
+  "capabilities": [],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "embedding"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.072,
+      "unit": "per_million_tokens",
+      "display": "$0.072/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "bailian/qwen3.6-27b",
+        "display_name": "Qwen3.6 27B"
+      },
+      {
+        "model_id": "bailian/qwen3.6-max-preview",
+        "display_name": "Qwen3.6 Max Preview"
+      },
+      {
+        "model_id": "bailian/qwen3.6-flash",
+        "display_name": "Qwen3.6 Flash"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "google/gemini-embedding-2-preview",
+        "display_name": "Google: Gemini Embedding 2 Preview"
+      },
+      {
+        "model_id": "openai/text-embedding-3-large",
+        "display_name": "OpenAI: Text Embedding 3 Large"
+      },
+      {
+        "model_id": "openai/text-embedding-3-small",
+        "display_name": "OpenAI: Text Embedding 3 Small"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:02:09.996Z"
+}

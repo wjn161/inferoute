@@ -1,0 +1,81 @@
+{
+  "model_id": "minimax/minimax-m2.7-highspeed",
+  "display_name": "MiniMax: MiniMax M2.7 Highspeed",
+  "brand": "Minimax",
+  "model_type": "chat",
+  "description": "M2.7 highspeed: Same performance, faster, more agile",
+  "release_date": null,
+  "specifications": {
+    "context_window": 200000,
+    "context_window_display": "200K",
+    "max_output_tokens": 131000,
+    "max_output_tokens_display": "131K"
+  },
+  "capabilities": [
+    "chat",
+    "function_calling",
+    "prompt_caching",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.6,
+      "unit": "per_million_tokens",
+      "display": "$0.6/M"
+    },
+    "output_token": {
+      "price": 2.4,
+      "unit": "per_million_tokens",
+      "display": "$2.4/M"
+    },
+    "cache_read": {
+      "price": 0.06,
+      "unit": "per_million_tokens",
+      "display": "$0.06/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "minimax/minimax-m2.7",
+        "display_name": "MiniMax: MiniMax M2.7"
+      },
+      {
+        "model_id": "minimax/minimax-m2.5",
+        "display_name": "MiniMax: MiniMax M2.5"
+      },
+      {
+        "model_id": "minimax/minimax-m2.5-lightning",
+        "display_name": "MiniMax: MiniMax M2.5 Lightning"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek V4 Flash"
+      },
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek V4 Pro"
+      },
+      {
+        "model_id": "openai/gpt-5.5",
+        "display_name": "OpenAI: GPT-5.5"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:02:59.392Z"
+}

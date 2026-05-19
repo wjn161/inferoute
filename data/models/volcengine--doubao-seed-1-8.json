@@ -1,0 +1,76 @@
+{
+  "model_id": "volcengine/doubao-seed-1-8",
+  "display_name": "Doubao Seed 1.8",
+  "brand": "Doubao",
+  "model_type": "chat",
+  "description": "ByteDance Doubao Seed 1.8 via Volcengine. Next generation model with improved reasoning, enhanced capabilities, and better performance.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 256000,
+    "context_window_display": "256K",
+    "max_output_tokens": 64000,
+    "max_output_tokens_display": "64K"
+  },
+  "capabilities": [
+    "chat",
+    "function_calling",
+    "prompt_caching",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.12,
+      "unit": "per_million_tokens",
+      "display": "$0.12/M"
+    },
+    "output_token": {
+      "price": 0.29,
+      "unit": "per_million_tokens",
+      "display": "$0.29/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "volcengine/doubao-seed-2.0-code",
+        "display_name": "Doubao Seed 2.0 Code"
+      },
+      {
+        "model_id": "volcengine/doubao-seed-2.0-lite",
+        "display_name": "Doubao Seed 2.0 Lite"
+      },
+      {
+        "model_id": "volcengine/doubao-seed-2.0-mini",
+        "display_name": "Doubao Seed 2.0 Mini"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek V4 Flash"
+      },
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek V4 Pro"
+      },
+      {
+        "model_id": "openai/gpt-5.5",
+        "display_name": "OpenAI: GPT-5.5"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:02:38.780Z"
+}

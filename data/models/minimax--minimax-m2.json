@@ -1,0 +1,81 @@
+{
+  "model_id": "minimax/minimax-m2",
+  "display_name": "MiniMax: MiniMax M2",
+  "brand": "Minimax",
+  "model_type": "chat",
+  "description": "MiniMax-M2 is a compact, high-efficiency large language model optimized for end-to-end coding and agentic workflows. With 10 billion activated parameters (230 billion total), it delivers near-frontier intelligence across general reasoning, tool use, and multi-step task execution while maintaining low latency and deployment efficiency.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 205000,
+    "context_window_display": "205K",
+    "max_output_tokens": 131000,
+    "max_output_tokens_display": "131K"
+  },
+  "capabilities": [
+    "chat",
+    "function_calling",
+    "prompt_caching",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.3,
+      "unit": "per_million_tokens",
+      "display": "$0.3/M"
+    },
+    "output_token": {
+      "price": 1.2,
+      "unit": "per_million_tokens",
+      "display": "$1.2/M"
+    },
+    "cache_read": {
+      "price": 0.03,
+      "unit": "per_million_tokens",
+      "display": "$0.03/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "minimax/minimax-m2.7",
+        "display_name": "MiniMax: MiniMax M2.7"
+      },
+      {
+        "model_id": "minimax/minimax-m2.7-highspeed",
+        "display_name": "MiniMax: MiniMax M2.7 Highspeed"
+      },
+      {
+        "model_id": "minimax/minimax-m2.5",
+        "display_name": "MiniMax: MiniMax M2.5"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek V4 Flash"
+      },
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek V4 Pro"
+      },
+      {
+        "model_id": "openai/gpt-5.5",
+        "display_name": "OpenAI: GPT-5.5"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:03:07.462Z"
+}

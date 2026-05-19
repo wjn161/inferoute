@@ -1,0 +1,77 @@
+{
+  "model_id": "moonshotai/kimi-k2.5",
+  "display_name": "MoonshotAI: Kimi K2.5",
+  "brand": "MoonshotAI",
+  "model_type": "chat",
+  "description": "Kimi K2.5 is Moonshot AI''s native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed visual and text tokens, it delivers strong performance in general reasoning, visual coding, and agentic tool-calling.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 262000,
+    "context_window_display": "262K",
+    "max_output_tokens": 262000,
+    "max_output_tokens_display": "262K"
+  },
+  "capabilities": [
+    "chat",
+    "function_calling",
+    "prompt_caching",
+    "reasoning",
+    "vision",
+    "video"
+  ],
+  "input_modalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.6,
+      "unit": "per_million_tokens",
+      "display": "$0.6/M"
+    },
+    "output_token": {
+      "price": 3,
+      "unit": "per_million_tokens",
+      "display": "$3/M"
+    },
+    "cache_read": {
+      "price": 0.1,
+      "unit": "per_million_tokens",
+      "display": "$0.1/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "moonshotai/kimi-k2.6",
+        "display_name": "MoonshotAI: Kimi K2.6"
+      }
+    ],
+    "similar": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek V4 Flash"
+      },
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek V4 Pro"
+      },
+      {
+        "model_id": "openai/gpt-5.5",
+        "display_name": "OpenAI: GPT-5.5"
+      }
+    ]
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": "2026-05-05T10:03:10.019Z"
+}
