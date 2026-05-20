@@ -84,6 +84,50 @@ const providers: {
   },
 ];
 
+const agents: {
+  name: string;
+  description: string;
+  accent: string;
+  logo: string;
+}[] = [
+  {
+    name: "Hermes Agent",
+    description: "Open-source self-improving AI agent by Nous Research with skill creation, multi-channel messaging, and multi-provider LLM integration.",
+    accent: "#8b5cf6",
+    logo: "/agents/hermes.svg",
+  },
+  {
+    name: "OpenClaw",
+    description: "Self-hosted personal AI assistant operating across WhatsApp, Telegram, Discord, Slack, and Signal with voice, memory, and extensible plugins.",
+    accent: "#f97316",
+    logo: "/agents/openclaw.svg",
+  },
+  {
+    name: "Kilo Code",
+    description: "Open-source agentic coding platform for VS Code, JetBrains, and CLI — the all-in-one engineering agent by Kilo.",
+    accent: "#06b6d4",
+    logo: "/agents/kilo-code.svg",
+  },
+  {
+    name: "Claude Code",
+    description: "Anthropic's agentic coding tool that reads codebases, edits files, runs commands, and integrates with git/GitHub across terminal, IDE, and web.",
+    accent: "#d97706",
+    logo: "/agents/claude-code.svg",
+  },
+  {
+    name: "Pi",
+    description: "A personal AI companion by Inflection AI — a coach, confidante, creative partner, and sounding board with high emotional intelligence.",
+    accent: "#ec4899",
+    logo: "/agents/pi.svg",
+  },
+  {
+    name: "Descript",
+    description: "AI-powered video and podcast editor that lets you edit media by editing text, with transcription, screen recording, and AI voice cloning.",
+    accent: "#ef4444",
+    logo: "/agents/descript.svg",
+  },
+];
+
 const valueProps = [
   {
     icon: WalletCards,
@@ -502,10 +546,13 @@ export default function Home() {
                 key={provider.name}
                 className="rounded-lg border border-line bg-canvas p-5"
               >
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex items-center gap-3">
                   <ProviderLogo provider={provider} size="md" />
+                  <h3 className="flex-1 text-xl font-semibold text-ink">
+                    {provider.name}
+                  </h3>
                   <span
-                    className="rounded-full px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.18em]"
+                    className="shrink-0 rounded-full px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.18em]"
                     style={{
                       backgroundColor: `${provider.accent}16`,
                       color: provider.accent,
@@ -514,11 +561,56 @@ export default function Home() {
                     Routable
                   </span>
                 </div>
-                <h3 className="mt-5 text-xl font-semibold text-ink">
-                  {provider.name}
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-muted">
+                <p className="mt-3 text-sm leading-6 text-muted">
                   {provider.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="agents" className="border-b border-line bg-canvas">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+          <div className="max-w-3xl">
+            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-route">
+              Featured agents
+            </p>
+            <h2 className="mt-4 text-3xl font-normal tracking-[-0.01em] text-ink sm:text-5xl">
+              Power AI Agents at Lower Cost and Higher Efficient
+            </h2>
+            <p className="mt-5 text-base leading-7 text-muted">
+              From coding agents to creative tools, these are the applications
+              pushing the frontier — all powered by the models you route through
+              inferoute.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {agents.map((agent) => (
+              <article
+                key={agent.name}
+                className="rounded-lg border border-line bg-canvas-soft p-5"
+              >
+                <div className="flex items-center gap-3">
+                  <span
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white p-2"
+                    style={{ boxShadow: `inset 0 0 0 1px ${agent.accent}33` }}
+                  >
+                    <Image
+                      src={agent.logo}
+                      alt={`${agent.name} logo`}
+                      width={24}
+                      height={24}
+                      className="h-6 w-6 object-contain"
+                      loading="lazy"
+                    />
+                  </span>
+                  <h3 className="text-xl font-semibold text-ink">
+                    {agent.name}
+                  </h3>
+                </div>
+                <p className="mt-3 text-sm leading-6 text-muted">
+                  {agent.description}
                 </p>
               </article>
             ))}
