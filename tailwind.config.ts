@@ -8,14 +8,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        canvas: "#0d0f0f",
-        "canvas-soft": "#151817",
-        "canvas-raised": "#1c201f",
-        line: "#303836",
-        ink: "#f5f7f5",
-        muted: "#a8b2ad",
-        "muted-dark": "#717b76",
-        route: "#00d992",
+        canvas: "#faf8f5",
+        "canvas-soft": "#f4f1ec",
+        "canvas-raised": "#ffffff",
+        line: "rgba(32, 32, 32, 0.08)",
+        ink: "#1a1a1a",
+        muted: "#6b6560",
+        "muted-dark": "#9b9590",
+        route: "#1f8a5c",
         flame: "#ea2804",
         mint: "#c8f6f9",
         periwinkle: "#bdbbff",
@@ -26,8 +26,8 @@ const config: Config = {
         mono: ["var(--font-mono)", "SFMono-Regular", "Menlo", "monospace"],
       },
       boxShadow: {
-        glow: "0 0 80px rgba(0, 217, 146, 0.16)",
-        "flame-glow": "0 18px 80px rgba(234, 40, 4, 0.22)",
+        glow: "0 0 80px rgba(234, 40, 4, 0.12)",
+        "flame-glow": "0 18px 80px rgba(234, 40, 4, 0.18)",
       },
     },
   },

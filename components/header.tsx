@@ -82,17 +82,7 @@ export function Header({ breadcrumbs, variant = "default" }: HeaderProps) {
         </div>
       )}
 
-      {/* Right: CTA */}
-      <Link
-        href="/login"
-        className={`shrink-0 rounded-md px-4 py-2 text-sm font-semibold transition focus:outline-none focus:ring-4 focus:ring-flame/20 ${
-          isTransparent
-            ? "hidden border border-line bg-canvas-soft text-ink hover:border-route/60 sm:inline-flex"
-            : "bg-flame text-white shadow-flame-glow hover:bg-[#f3431f]"
-        }`}
-      >
-        {isTransparent ? "Start free" : "Get API key"}
-      </Link>
+      {/* Right: empty for future use */}
     </>
   );
 

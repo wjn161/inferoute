@@ -15,13 +15,10 @@ import {
 } from "lucide-react";
 import type { Provider, Agent } from "@/components/landing/types";
 import { HeroSection } from "@/components/landing/hero-section";
-import { StatsSection } from "@/components/landing/stats-section";
 import { ValuePropsSection } from "@/components/landing/value-props-section";
 import { ModelFamiliesSection } from "@/components/landing/model-families-section";
 import { AgentsSection } from "@/components/landing/agents-section";
 import { FeaturesSection } from "@/components/landing/features-section";
-import { ProofSection } from "@/components/landing/proof-section";
-import { CtaSection } from "@/components/landing/cta-section";
 import { FaqSection } from "@/components/landing/faq-section";
 
 const providers: Provider[] = [
@@ -197,14 +194,6 @@ const modules = [
   },
 ];
 
-const proofBadges = [
-  "OpenAI SDK style workflows",
-  "Agent-based apps",
-  "Coding assistants",
-  "LangChain / orchestration stacks",
-  "Production API teams",
-];
-
 const faqs = [
   {
     question: "What is Inferoute?",
@@ -266,14 +255,11 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <HeroSection providers={providers} />
-      <StatsSection />
+      <HeroSection />
       <ValuePropsSection valueProps={valueProps} />
       <ModelFamiliesSection providers={providers} />
       <AgentsSection agents={agents} />
       <FeaturesSection modules={modules} />
-      <ProofSection proofBadges={proofBadges} />
-      <CtaSection />
       <FaqSection faqs={faqs} />
     </main>
   );

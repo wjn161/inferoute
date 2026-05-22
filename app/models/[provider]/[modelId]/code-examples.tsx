@@ -123,7 +123,7 @@ export function CodeExamples({ modelId }: { modelId: string }) {
         role="tabpanel"
         aria-labelledby={`tab-${activeTab.toLowerCase()}`}
         id={`panel-${activeTab.toLowerCase()}`}
-        className="overflow-x-auto bg-[#0a0c0b] p-5 text-[13px] leading-relaxed"
+        className="overflow-x-auto bg-canvas-raised p-5 text-[13px] leading-relaxed"
       >
         <code className="font-mono text-muted">{generateCode(activeTab, modelId)}</code>
       </pre>
