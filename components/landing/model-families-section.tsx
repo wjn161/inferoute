@@ -7,13 +7,13 @@ interface ModelFamiliesSectionProps {
 
 export function ModelFamiliesSection({ providers }: ModelFamiliesSectionProps) {
   return (
-    <section id="models" className="border-b border-line bg-[#101211]">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <section id="models" className="border-b border-line bg-canvas">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="max-w-3xl">
           <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-route">
             Model families
           </p>
-          <h2 className="mt-4 text-3xl font-normal tracking-[-0.01em] text-ink sm:text-5xl">
+          <h2 className="mt-4 text-3xl font-semibold tracking-[-0.02em] text-ink sm:text-5xl">
             Open-model-first, multi-provider by design.
           </h2>
           <p className="mt-5 text-base leading-7 text-muted">
@@ -22,11 +22,11 @@ export function ModelFamiliesSection({ providers }: ModelFamiliesSectionProps) {
             month.
           </p>
         </div>
-        <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {providers.map((provider) => (
             <article
               key={provider.name}
-              className="rounded-lg border border-line bg-canvas p-5"
+              className="rounded-2xl border border-line bg-white p-5"
             >
               <div className="flex items-center gap-3">
                 <ProviderLogo provider={provider} size="md" />

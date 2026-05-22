@@ -12,12 +12,12 @@
 
   <g stroke-linecap="round" stroke-linejoin="round">
     <!-- top route -->
-    <circle cx="24" cy="38" r="7" fill="#000831"/>
-    <path d="M31 38H58C66 38 71 41 76 47L89 59" stroke="#000831" stroke-width="11"/>
+    <circle cx="24" cy="38" r="7" fill="#FFFFFF"/>
+    <path d="M31 38H58C66 38 71 41 76 47L89 59" stroke="#FFFFFF" stroke-width="11"/>
 
     <!-- bottom route -->
-    <circle cx="24" cy="90" r="7" fill="#000831"/>
-    <path d="M31 90H58C66 90 71 87 76 81L89 69" stroke="#000831" stroke-width="11"/>
+    <circle cx="24" cy="90" r="7" fill="#FFFFFF"/>
+    <path d="M31 90H58C66 90 71 87 76 81L89 69" stroke="#FFFFFF" stroke-width="11"/>
 
     <!-- middle route -->
     <circle cx="24" cy="64" r="7" fill="#6A00FF"/>
