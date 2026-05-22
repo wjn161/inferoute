@@ -25,13 +25,16 @@ export function ApiKeyForm() {
     setIsSubmitting(true);
 
     try {
-      await fetch("/api/notify", {
+      const res = await fetch("/api/notify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, useCase }),
       });
-    } catch {
-      // Non-blocking: continue to success state even if notify fails
+      if (!res.ok) {
+        console.error("Failed to send notification:", res.status);
+      }
+    } catch (err) {
+      console.error("Failed to send notification:", err);
     }
 
     setIsSubmitting(false);

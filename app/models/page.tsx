@@ -1,29 +1,16 @@
-import fs from "fs";
-import path from "path";
-import type { ModelDetail, ModelIndex } from "@/lib/models";
+import type { ModelDetail } from "@/lib/models";
+import { loadModelIndex, loadModelDetail } from "@/lib/models-server";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import ModelList from "@/components/model-list";
 
-const modelsDir = path.join(process.cwd(), "data/models");
-
-function loadModelDetail(provider: string, modelId: string): ModelDetail | null {
-  const filePath = path.join(modelsDir, `${provider}--${modelId}.json`);
-  try {
-    return JSON.parse(fs.readFileSync(filePath, "utf-8")) as ModelDetail;
-  } catch {
-    return null;
-  }
-}
-
-export default function ModelsPage() {
-  const indexRaw = fs.readFileSync(path.join(modelsDir, "_index.json"), "utf-8");
-  const index = JSON.parse(indexRaw) as ModelIndex;
+export default async function ModelsPage() {
+  const index = await loadModelIndex();
 
   const details: ModelDetail[] = [];
   for (const entry of index.models) {
     const [provider, modelId] = entry.model_id.split("/");
-    const detail = loadModelDetail(provider, modelId);
+    const detail = await loadModelDetail(provider, modelId);
     if (detail) details.push(detail);
   }
 

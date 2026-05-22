@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Link from "next/link";
 import { ArrowRight, Chrome, Github, Eye, EyeOff, Loader2 } from "lucide-react";
 import Image from "next/image";
 
@@ -13,7 +14,11 @@ export function LoginForm() {
   function handleEmailLogin(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setIsSubmitting(true);
-    // TODO: integrate backend auth
+    try {
+      // TODO: integrate backend auth
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -80,9 +85,9 @@ export function LoginForm() {
           <label className="block">
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium text-ink">Password</span>
-              <a href="/forgot-password" className="text-xs text-muted transition hover:text-route">
+              <Link href="/forgot-password" className="text-xs text-muted transition hover:text-route">
                 Forgot password?
-              </a>
+              </Link>
             </div>
             <div className="relative mt-2">
               <input
@@ -126,9 +131,9 @@ export function LoginForm() {
 
         <p className="mt-6 text-center text-sm text-muted">
           Don&apos;t have an account?{" "}
-          <a href="/signup" className="font-medium text-route transition hover:underline">
+          <Link href="/signup" className="font-medium text-route transition hover:underline">
             Create one
-          </a>
+          </Link>
         </p>
       </div>
 

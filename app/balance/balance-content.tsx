@@ -7,16 +7,12 @@ import {
   CreditCard,
   Zap,
   History,
-  RefreshCw,
   Plus,
   TrendingUp,
   TrendingDown,
   DollarSign,
   Activity,
-  Clock,
   CheckCircle2,
-  XCircle,
-  AlertCircle,
   Download,
   Filter,
 } from "lucide-react";
@@ -262,7 +258,7 @@ export function BalanceContent() {
                     min={1}
                     value={selectedAmount}
                     onChange={(e) =>
-                      setSelectedAmount(Number(e.target.value) || 0)
+                      setSelectedAmount(Math.max(1, Number(e.target.value) || 1))
                     }
                     className="block w-full rounded-md border border-line bg-canvas py-2.5 pl-7 pr-3 text-sm text-ink focus:border-route focus:outline-none focus:ring-2 focus:ring-route/20"
                   />

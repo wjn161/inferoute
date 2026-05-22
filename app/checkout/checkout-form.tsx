@@ -72,10 +72,28 @@ const defaultPlan = planDetails.Builder;
 
 export function CheckoutForm({ planName }: { planName: string }) {
   const plan = planDetails[planName] ?? defaultPlan;
-  const [step, setStep] = useState<"details" | "review">("details");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
+  const [errors, setErrors] = useState<string[]>([]);
+  const [success, setSuccess] = useState(false);
+
+  function validateEmail(value: string) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  }
+
+  function handleSubmit() {
+    const newErrors: string[] = [];
+    if (!name.trim()) newErrors.push("Full name is required.");
+    if (!validateEmail(email)) newErrors.push("Please enter a valid email address.");
+    if (!cardNumber.trim()) newErrors.push("Card number is required.");
+
+    setErrors(newErrors);
+    if (newErrors.length === 0) {
+      setSuccess(true);
+    }
+  }
 
   return (
     <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
@@ -202,6 +220,8 @@ export function CheckoutForm({ planName }: { planName: string }) {
               <input
                 id="card-number"
                 type="text"
+                value={cardNumber}
+                onChange={(e) => setCardNumber(e.target.value)}
                 placeholder="4242 4242 4242 4242"
                 className="mt-1.5 block w-full rounded-md border border-line bg-canvas px-3 py-2.5 font-mono text-sm text-ink placeholder:text-muted-dark focus:border-route focus:outline-none focus:ring-2 focus:ring-route/20"
               />
@@ -251,15 +271,42 @@ export function CheckoutForm({ planName }: { planName: string }) {
           </div>
         </div>
 
+        {/* Validation errors */}
+        {errors.length > 0 && (
+          <div className="rounded-md border border-flame/40 bg-flame/10 p-4">
+            <ul className="list-inside list-disc space-y-1 text-sm text-flame">
+              {errors.map((err) => (
+                <li key={err}>{err}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Success message */}
+        {success && (
+          <div className="rounded-md border border-route/40 bg-route/10 p-6 text-center">
+            <CheckCircle2 size={40} className="mx-auto text-route" />
+            <p className="mt-3 text-lg font-semibold text-ink">
+              Purchase Complete
+            </p>
+            <p className="mt-1 text-sm text-muted">
+              Thank you for subscribing to the {planName} plan. Check your email for confirmation.
+            </p>
+          </div>
+        )}
+
         {/* Submit */}
-        <button
-          type="button"
-          className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-flame px-8 font-semibold text-white shadow-flame-glow transition hover:bg-[#f3431f] focus:outline-none focus:ring-4 focus:ring-flame/20 sm:w-auto sm:min-w-[240px]"
-        >
-          <Lock size={16} aria-hidden="true" />
-          Complete Purchase
-          <ArrowRight size={16} aria-hidden="true" />
-        </button>
+        {!success && (
+          <button
+            type="button"
+            onClick={handleSubmit}
+            className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-flame px-8 font-semibold text-white shadow-flame-glow transition hover:bg-[#f3431f] focus:outline-none focus:ring-4 focus:ring-flame/20 sm:w-auto sm:min-w-[240px]"
+          >
+            <Lock size={16} aria-hidden="true" />
+            Complete Purchase
+            <ArrowRight size={16} aria-hidden="true" />
+          </button>
+        )}
 
         <p className="text-xs text-muted-dark">
           By completing your purchase, you agree to the{" "}

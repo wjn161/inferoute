@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import {
   ArrowUpRight,
   Search,
@@ -66,6 +66,7 @@ interface ModelListProps {
 
 export default function ModelList({ models }: ModelListProps) {
   const [search, setSearch] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState("");
   const [providerFilter, setProviderFilter] = useState<Set<string>>(new Set());
   const [typeFilter, setTypeFilter] = useState<Set<string>>(new Set());
   const [capabilityFilter, setCapabilityFilter] = useState<Set<string>>(new Set());
@@ -74,6 +75,11 @@ export default function ModelList({ models }: ModelListProps) {
   const [inputModalityFilter, setInputModalityFilter] = useState<Set<string>>(new Set());
   const [outputModalityFilter, setOutputModalityFilter] = useState<Set<string>>(new Set());
   const [showFilters, setShowFilters] = useState(false);
+
+  useEffect(() => {
+    const handler = setTimeout(() => setDebouncedSearch(search), 200);
+    return () => clearTimeout(handler);
+  }, [search]);
 
   const providers = useMemo(
     () => [...new Set(models.map((m) => m.brand))].sort(),
@@ -123,8 +129,8 @@ export default function ModelList({ models }: ModelListProps) {
   const filtered = useMemo(() => {
     let result = models;
 
-    if (search) {
-      const q = search.toLowerCase();
+    if (debouncedSearch) {
+      const q = debouncedSearch.toLowerCase();
       result = result.filter(
         (m) =>
           m.display_name.toLowerCase().includes(q) ||
@@ -194,7 +200,7 @@ export default function ModelList({ models }: ModelListProps) {
 
     return result;
   }, [
-    search,
+    debouncedSearch,
     providerFilter,
     typeFilter,
     capabilityFilter,

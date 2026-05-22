@@ -1,3 +1,7 @@
+// ---------------------------------------------------------------------------
+// Types (shared between client and server)
+// ---------------------------------------------------------------------------
+
 export interface ModelPricingItem {
   price: number;
   unit: string;
@@ -48,7 +52,7 @@ export interface ModelDetail {
     same_brand: RelatedModelRef[];
     similar: RelatedModelRef[];
   };
-  faq: ModelFAQ[];
+  faq?: ModelFAQ[];
   code_examples: {
     python: string | null;
     curl: string | null;
@@ -70,6 +74,10 @@ export interface ModelIndex {
   scraped_at: string;
   models: ModelIndexEntry[];
 }
+
+// ---------------------------------------------------------------------------
+// Client-safe utilities
+// ---------------------------------------------------------------------------
 
 export function getProviderFromModelId(modelId: string): string {
   return modelId.split("/")[0];

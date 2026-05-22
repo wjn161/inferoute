@@ -68,7 +68,7 @@ export function Header({ breadcrumbs, variant = "default" }: HeaderProps) {
                   href={link.href}
                   className="transition hover:text-ink"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   {link.label}
                 </a>

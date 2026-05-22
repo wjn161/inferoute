@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Check, Copy } from "lucide-react";
 
+const CLIPBOARD_FEEDBACK_MS = 2000;
 const tabs = ["Python", "cURL", "Node.js"] as const;
 
 function generateCode(lang: (typeof tabs)[number], modelId: string): string {
@@ -80,18 +81,25 @@ export function CodeExamples({ modelId }: { modelId: string }) {
   const [copied, setCopied] = useState(false);
 
   function handleCopy() {
-    navigator.clipboard.writeText(generateCode(activeTab, modelId));
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    navigator.clipboard.writeText(generateCode(activeTab, modelId)).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), CLIPBOARD_FEEDBACK_MS);
+    }).catch((err) => {
+      console.error("Copy failed:", err);
+    });
   }
 
   return (
     <div className="mt-4 overflow-hidden rounded-lg border border-line">
       <div className="flex items-center justify-between border-b border-line bg-canvas-soft px-4">
-        <div className="flex">
+        <div role="tablist" className="flex">
           {tabs.map((tab) => (
             <button
               key={tab}
+              role="tab"
+              aria-selected={activeTab === tab}
+              tabIndex={activeTab === tab ? 0 : -1}
+              id={`tab-${tab.toLowerCase()}`}
               onClick={() => setActiveTab(tab)}
               className={`px-4 py-2.5 text-xs font-medium transition ${
                 activeTab === tab
@@ -111,7 +119,12 @@ export function CodeExamples({ modelId }: { modelId: string }) {
           {copied ? "Copied" : "Copy"}
         </button>
       </div>
-      <pre className="overflow-x-auto bg-[#0a0c0b] p-5 text-[13px] leading-relaxed">
+      <pre
+        role="tabpanel"
+        aria-labelledby={`tab-${activeTab.toLowerCase()}`}
+        id={`panel-${activeTab.toLowerCase()}`}
+        className="overflow-x-auto bg-[#0a0c0b] p-5 text-[13px] leading-relaxed"
+      >
         <code className="font-mono text-muted">{generateCode(activeTab, modelId)}</code>
       </pre>
     </div>

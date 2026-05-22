@@ -1,8 +1,7 @@
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
 import type { Metadata } from "next";
 import type { ModelDetail } from "@/lib/models";
+import { loadModelDetail } from "@/lib/models-server";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import {
@@ -13,17 +12,6 @@ import {
 import { CopyButton } from "@/components/copy-button";
 import { CodeExamples } from "./code-examples";
 
-const modelsDir = path.join(process.cwd(), "data/models");
-
-function loadModel(provider: string, modelId: string): ModelDetail | null {
-  const filePath = path.join(modelsDir, `${provider}--${modelId}.json`);
-  try {
-    return JSON.parse(fs.readFileSync(filePath, "utf-8")) as ModelDetail;
-  } catch {
-    return null;
-  }
-}
-
 interface PageParams {
   provider: string;
   modelId: string;
@@ -31,7 +19,7 @@ interface PageParams {
 
 export async function generateMetadata({ params }: { params: Promise<PageParams> }): Promise<Metadata> {
   const { provider, modelId } = await params;
-  const model = loadModel(provider, modelId);
+  const model = await loadModelDetail(provider, modelId);
   if (!model) return { title: "Model Not Found | inferoute" };
   return {
     title: `${model.display_name} | inferoute`,
@@ -50,7 +38,7 @@ const ALL_PRICING_KEYS: { key: keyof ModelDetail["pricing"]; label: string }[] =
 
 export default async function ModelDetailPage({ params }: { params: Promise<PageParams> }) {
   const { provider, modelId } = await params;
-  const model = loadModel(provider, modelId);
+  const model = await loadModelDetail(provider, modelId);
 
   if (!model) {
     return (
