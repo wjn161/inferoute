@@ -38,9 +38,10 @@ build() {
   pnpm build
 
   # Next.js standalone doesn't copy static assets automatically.
-  # Copy .next/static into the standalone directory so JS/CSS/SVG etc. resolve.
+  # Copy .next/static + public/ into the standalone directory so JS/CSS/SVG etc. resolve.
   cyan "      Copying static assets into standalone..."
   cp -R "$SCRIPT_DIR/.next/static" "$SCRIPT_DIR/.next/standalone/.next/static"
+  cp -R "$SCRIPT_DIR/public" "$SCRIPT_DIR/.next/standalone/public"
 
   green "Build OK — standalone: .next/standalone"
 }
