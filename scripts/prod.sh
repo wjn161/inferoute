@@ -27,6 +27,8 @@ check_env() {
 install() {
   cyan "[1/2] Installing dependencies..."
   cd "$SCRIPT_DIR"
+  # Allow native build scripts for sharp (Next.js image optimization) and unrs-resolver
+  pnpm approve-builds sharp unrs-resolver 2>/dev/null || true
   pnpm install --frozen-lockfile --prod=false
 }
 
