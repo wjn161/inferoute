@@ -53,3 +53,58 @@ body {
 .code-token-accent {
   color: #1a7a52;
 }
+
+.legal-prose {
+  color: #3a3a3a;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.legal-prose h2 {
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-prose h3 {
+  color: #1a1a1a;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal-prose p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-prose ul li {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.legal-prose strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.legal-prose a {
+  color: #b91c1c;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-prose a:hover {
+  color: #1a1a1a;
+}

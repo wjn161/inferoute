@@ -1,15 +1,15 @@
 {
   "model_id": "deepseek/deepseek-v4-pro",
-  "display_name": "DeepSeek V4 Pro",
+  "display_name": "DeepSeek: DeepSeek V4 Pro",
   "brand": "DeepSeek",
   "model_type": "chat",
-  "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding, and long-horizon agent workflows, with strong performance across knowledge, math, and software engineering benchmarks.",
-  "release_date": "2026-04-24",
+  "description": "Flagship MoE large model with 1.6T total parameters and 49B activated parameters, natively supporting million-token ultra-long context. Backed by massive high-quality training data, it delivers top-tier mathematical logic, complex reasoning, professional coding, and deep long-text comprehension—well suited for advanced research, complex office workflows, and deep intelligent agent scenarios.",
+  "release_date": null,
   "specifications": {
-    "context_window": null,
-    "context_window_display": null,
-    "max_output_tokens": null,
-    "max_output_tokens_display": null
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 393216,
+    "max_output_tokens_display": "393K"
   },
   "capabilities": [
     "chat"
@@ -22,9 +22,30 @@
   ],
   "supported_protocols": [],
   "providers": [],
-  "pricing": {},
+  "pricing": {
+    "input_token": {
+      "price": 1.76470588,
+      "unit": "per_million_tokens",
+      "display": "$1.76/M"
+    },
+    "output_token": {
+      "price": 3.52941176,
+      "unit": "per_million_tokens",
+      "display": "$3.53/M"
+    },
+    "cache_read": {
+      "price": 0.14705882,
+      "unit": "per_million_tokens",
+      "display": "$0.15/M"
+    }
+  },
   "related_models": {
-    "same_brand": [],
+    "same_brand": [
+      {
+        "model_id": "deepseek/deepseek-v4-flash",
+        "display_name": "DeepSeek: DeepSeek V4 Flash"
+      }
+    ],
     "similar": []
   },
   "code_examples": {
@@ -32,5 +53,5 @@
     "curl": null,
     "nodejs": null
   },
-  "scraped_at": "2026-05-05T10:18:53.770Z"
+  "scraped_at": null
 }

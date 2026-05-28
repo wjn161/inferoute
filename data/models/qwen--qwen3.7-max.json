@@ -1,0 +1,70 @@
+{
+  "model_id": "qwen/qwen3.7-max",
+  "display_name": "Qwen: Qwen3.7 Max",
+  "brand": "Qwen",
+  "model_type": "chat",
+  "description": "The largest and most capable Max model in the Qwen3.7 series, currently opened with pure-text capabilities for early experience. Qwen3.7 is a new-generation flagship model built for the agent era, with core advantages in the breadth and depth of agent capabilities—excelling in programming, office and productivity tasks, and long-horizon autonomous execution. This version is functionally equivalent to the snapshot model qwen3.7-max-2026-05-20.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 65536,
+    "max_output_tokens_display": "65.5K"
+  },
+  "capabilities": [
+    "chat",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 1.76470588,
+      "unit": "per_million_tokens",
+      "display": "$1.76/M"
+    },
+    "output_token": {
+      "price": 5.29411765,
+      "unit": "per_million_tokens",
+      "display": "$5.29/M"
+    },
+    "cache_read": {
+      "price": 0.17647059,
+      "unit": "per_million_tokens",
+      "display": "$0.18/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "qwen/qwen3.6-plus",
+        "display_name": "Qwen: Qwen3.6 Plus"
+      },
+      {
+        "model_id": "qwen/qwen3.6-flash",
+        "display_name": "Qwen: Qwen3.6 Flash"
+      },
+      {
+        "model_id": "qwen/qwen3.5-plus",
+        "display_name": "Qwen: Qwen3.5 Plus"
+      },
+      {
+        "model_id": "qwen/qwen3.5-flash",
+        "display_name": "Qwen: Qwen3.5 Flash"
+      }
+    ],
+    "similar": []
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": null
+}

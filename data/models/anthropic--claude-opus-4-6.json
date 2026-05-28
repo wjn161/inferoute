@@ -1,0 +1,52 @@
+{
+  "model_id": "anthropic/claude-opus-4-6",
+  "display_name": "Anthropic: Claude Opus 4.6",
+  "brand": "Anthropic",
+  "model_type": "chat",
+  "description": "Anthropic Claude Opus 4.6 model alias exposed by tkhub",
+  "release_date": null,
+  "specifications": {
+    "context_window": 200000,
+    "context_window_display": "200K",
+    "max_output_tokens": 32768,
+    "max_output_tokens_display": "32.8K"
+  },
+  "capabilities": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 5.0,
+      "unit": "per_million_tokens",
+      "display": "$5/M"
+    },
+    "output_token": {
+      "price": 25.0,
+      "unit": "per_million_tokens",
+      "display": "$25/M"
+    },
+    "cache_read": {
+      "price": 0.5,
+      "unit": "per_million_tokens",
+      "display": "$0.5/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [],
+    "similar": []
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": null
+}

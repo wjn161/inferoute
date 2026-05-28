@@ -1,0 +1,72 @@
+{
+  "model_id": "qwen/qwen3.6-flash",
+  "display_name": "Qwen: Qwen3.6 Flash",
+  "brand": "Qwen",
+  "model_type": "chat",
+  "description": "Qwen3.6 native vision-language Flash model, with significantly improved performance over 3.5-Flash. This model focuses on enhancing agentic coding capabilities (substantially surpassing previous generations on multiple code-agent benchmarks), mathematical reasoning, and code reasoning; on the vision side, spatial intelligence is markedly strengthened, with especially notable gains in object localization and detection.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 65536,
+    "max_output_tokens_display": "65.5K"
+  },
+  "capabilities": [
+    "chat",
+    "reasoning",
+    "vision"
+  ],
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.17647059,
+      "unit": "per_million_tokens",
+      "display": "$0.18/M"
+    },
+    "output_token": {
+      "price": 1.05882353,
+      "unit": "per_million_tokens",
+      "display": "$1.06/M"
+    },
+    "cache_read": {
+      "price": 0.01764706,
+      "unit": "per_million_tokens",
+      "display": "$0.02/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "qwen/qwen3.7-max",
+        "display_name": "Qwen: Qwen3.7 Max"
+      },
+      {
+        "model_id": "qwen/qwen3.6-plus",
+        "display_name": "Qwen: Qwen3.6 Plus"
+      },
+      {
+        "model_id": "qwen/qwen3.5-plus",
+        "display_name": "Qwen: Qwen3.5 Plus"
+      },
+      {
+        "model_id": "qwen/qwen3.5-flash",
+        "display_name": "Qwen: Qwen3.5 Flash"
+      }
+    ],
+    "similar": []
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": null
+}

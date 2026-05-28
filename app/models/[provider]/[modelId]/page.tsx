@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import type { ModelDetail } from "@/lib/models";
 import { loadModelDetail } from "@/lib/models-server";
+import { getOgImageUrl } from "@/lib/og";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import {
@@ -21,9 +22,31 @@ export async function generateMetadata({ params }: { params: Promise<PageParams>
   const { provider, modelId } = await params;
   const model = await loadModelDetail(provider, modelId);
   if (!model) return { title: "Model Not Found | inferoute" };
+
+  const description = model.description ?? `Details for ${model.display_name} on inferoute.`;
+  const ogImage = getOgImageUrl({
+    title: model.display_name,
+    description: `${model.brand} · ${model.model_type} · inferoute.ai`,
+    brand: model.brand,
+  });
+
   return {
     title: `${model.display_name} | inferoute`,
-    description: model.description ?? `Details for ${model.display_name} on inferoute.`,
+    description,
+    alternates: {
+      canonical: `https://inferoute.ai/models/${provider}/${modelId}`,
+    },
+    openGraph: {
+      title: `${model.display_name} | inferoute`,
+      description,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: model.display_name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${model.display_name} | inferoute`,
+      description,
+      images: [ogImage],
+    },
   };
 }
 

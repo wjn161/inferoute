@@ -12,9 +12,6 @@ export function Footer() {
         <Link href="/#features" className="text-muted transition hover:text-ink">
           Features
         </Link>
-        <Link href="/#pricing" className="text-muted transition hover:text-ink">
-          Pricing
-        </Link>
         <a
           href="https://docs.inferoute.ai"
           className="text-muted transition hover:text-ink"
@@ -34,12 +31,10 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold text-ink">Company</h3>
           <div className="mt-3 flex flex-col gap-2">
-            <Link href="/about" className="text-sm text-muted transition hover:text-ink">About</Link>
             <Link href="/terms" className="text-sm text-muted transition hover:text-ink">Terms of Service</Link>
             <Link href="/privacy" className="text-sm text-muted transition hover:text-ink">Privacy Policy</Link>
             <Link href="/dpa" className="text-sm text-muted transition hover:text-ink">Data Processing Agreement</Link>
-            <Link href="/sla" className="text-sm text-muted transition hover:text-ink">Service Level Agreement</Link>
-            <Link href="/support" className="text-sm text-muted transition hover:text-ink">Support</Link>
+            <Link href="https://docs.inferoute.ai/support" className="text-sm text-muted transition hover:text-ink">Support</Link>
           </div>
         </div>
 
@@ -48,8 +43,7 @@ export function Footer() {
           <h3 className="text-sm font-semibold text-ink">Developer</h3>
           <div className="mt-3 flex flex-col gap-2">
             <a href="https://docs.inferoute.ai" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">Documentation</a>
-            <a href="https://docs.inferoute.ai/api-reference" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">API Reference</a>
-            <a href="https://status.inferoute.ai" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">Status</a>
+            <a href="https://docs.inferoute.ai/api" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">API Reference</a>
           </div>
         </div>
 
@@ -57,10 +51,9 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold text-ink">Connect</h3>
           <div className="mt-3 flex flex-col gap-2">
-            <a href="https://discord.gg/inferoute" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">Discord</a>
-            <a href="https://github.com/inferoute" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/company/inferoute" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://x.com/inferoute" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://discord.gg/inferoute-ai" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://github.com/inferoute-ai" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://x.com/inferoute-ai" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">X</a>
             <a href="https://youtube.com/@inferoute" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">YouTube</a>
           </div>
         </div>

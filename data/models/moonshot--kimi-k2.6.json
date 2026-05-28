@@ -1,0 +1,60 @@
+{
+  "model_id": "moonshot/kimi-k2.6",
+  "display_name": "Moonshot: Kimi K2.6",
+  "brand": "Moonshot",
+  "model_type": "chat",
+  "description": "kimi-k2.6 is Kimi's latest and most intelligent model, with stronger and more stable long-horizon code authoring, and significantly improved instruction following and self-correction. It supports text, image, and video input, thinking and non-thinking modes, and both conversational and Agent tasks.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 262144,
+    "context_window_display": "262K",
+    "max_output_tokens": 16384,
+    "max_output_tokens_display": "16.4K"
+  },
+  "capabilities": [
+    "chat",
+    "reasoning",
+    "vision"
+  ],
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.95588235,
+      "unit": "per_million_tokens",
+      "display": "$0.96/M"
+    },
+    "output_token": {
+      "price": 3.97058824,
+      "unit": "per_million_tokens",
+      "display": "$3.97/M"
+    },
+    "cache_read": {
+      "price": 0.09558824,
+      "unit": "per_million_tokens",
+      "display": "$0.1/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "moonshot/kimi-k2.5",
+        "display_name": "Moonshot: Kimi K2.5"
+      }
+    ],
+    "similar": []
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": null
+}

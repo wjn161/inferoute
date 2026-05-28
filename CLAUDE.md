@@ -30,8 +30,7 @@ app/
   models/page.tsx           # Model catalog (SSR, reads JSON from /data/models/)
   models/[provider]/[modelId]/page.tsx  # Model detail (SSR, dynamic metadata)
   login/page.tsx            # Login page (UI only, not wired to backend)
-  balance/page.tsx          # Balance & billing (mock data, not wired)
-  checkout/page.tsx         # Checkout flow (mock data, not wired)
+  signup/page.tsx           # Sign-up page (UI only, not wired to backend)
   api/notify/route.ts       # POST /api/notify — lead capture (only functioning backend)
 
 components/
@@ -40,8 +39,8 @@ components/
   model-list.tsx            # Model catalog with filters, search, card grid
   copy-button.tsx           # Copy-to-clipboard with icon feedback
   login-form.tsx            # OAuth + email login form (mock)
+  signup-form.tsx           # OAuth + email sign-up form (mock)
   api-key-form.tsx          # API key request form → /api/notify
-  checkout-form.tsx         # Payment form (mock)
 
 lib/
   models.ts                 # ModelDetail, ModelIndex types + parsing utilities
@@ -139,5 +138,5 @@ All model info comes from static JSON in `data/models/`. To add/refresh models, 
 ## Current State
 
 - **Wired**: Landing page, model catalog, model detail pages, `/api/notify` lead capture
-- **Mock/UI only**: Login, checkout, balance pages (no backend, no auth, no payment)
+- **Mock/UI only**: Login & signup pages (no backend, no auth)
 - **No env vars required** for dev; only `INFEROUTE_NOTIFY_ENDPOINT` for production notifications

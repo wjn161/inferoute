@@ -1,394 +1,129 @@
 {
-  "total_models": 93,
+  "total_models": 13,
   "scraped_at": "2026-05-05T10:03:13.403Z",
   "models": [
     {
       "model_id": "deepseek/deepseek-v4-flash",
-      "display_name": "DeepSeek V4 Flash",
+      "display_name": "DeepSeek: DeepSeek V4 Flash",
       "brand": "DeepSeek",
       "model_type": "chat",
-      "file": "deepseek--deepseek-v4-flash.json"
+      "file": "deepseek--deepseek-v4-flash.json",
+      "sort_order": 10
     },
     {
       "model_id": "deepseek/deepseek-v4-pro",
-      "display_name": "DeepSeek V4 Pro",
+      "display_name": "DeepSeek: DeepSeek V4 Pro",
       "brand": "DeepSeek",
       "model_type": "chat",
-      "file": "deepseek--deepseek-v4-pro.json"
+      "file": "deepseek--deepseek-v4-pro.json",
+      "sort_order": 20
     },
     {
-      "model_id": "deepseek/deepseek-v3.2",
-      "display_name": "DeepSeek V3.2",
-      "brand": "DeepSeek",
-      "model_type": "chat",
-      "file": "deepseek--deepseek-v3.2.json"
-    },
-    {
-      "model_id": "bailian/qwen3.6-27b",
-      "display_name": "Qwen3.6 27B",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen3.6-27b.json"
-    },
-    {
-      "model_id": "bailian/qwen3.6-flash",
-      "display_name": "Qwen3.6 Flash",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen3.6-flash.json"
-    },
-    {
-      "model_id": "bailian/qwen3.6-plus",
-      "display_name": "Qwen3.6 Plus",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen3.6-plus.json"
-    },
-    {
-      "model_id": "bailian/qwen3.6-max-preview",
-      "display_name": "Qwen3.6 Max Preview",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen3.6-max-preview.json"
-    },
-    {
-      "model_id": "bailian/qwen3.5-122b-a10b",
-      "display_name": "Qwen: Qwen3.5 122B A10B",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen3.5-122b-a10b.json"
-    },
-    {
-      "model_id": "bailian/qwen3.5-27b",
-      "display_name": "Qwen: Qwen3.5 27B",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen3.5-27b.json"
-    },
-    {
-      "model_id": "bailian/qwen3.5-35b-a3b",
-      "display_name": "Qwen: Qwen3.5 35B A3B",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen3.5-35b-a3b.json"
-    },
-    {
-      "model_id": "bailian/qwen3.5-397b-a17b",
-      "display_name": "Qwen: Qwen3.5 397B A17B",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen3.5-397b-a17b.json"
-    },
-    {
-      "model_id": "bailian/qwen3.5-flash",
+      "model_id": "qwen/qwen3.5-flash",
       "display_name": "Qwen: Qwen3.5 Flash",
       "brand": "Qwen",
       "model_type": "chat",
-      "file": "bailian--qwen3.5-flash.json"
+      "file": "qwen--qwen3.5-flash.json",
+      "sort_order": 30
     },
     {
-      "model_id": "bailian/qwen3.5-plus",
-      "display_name": "Qwen3.5 Plus",
+      "model_id": "qwen/qwen3.5-plus",
+      "display_name": "Qwen: Qwen3.5 Plus",
       "brand": "Qwen",
       "model_type": "chat",
-      "file": "bailian--qwen3.5-plus.json"
+      "file": "qwen--qwen3.5-plus.json",
+      "sort_order": 40
     },
     {
-      "model_id": "bailian/qwen3-max",
-      "display_name": "Qwen3 Max",
+      "model_id": "qwen/qwen3.6-flash",
+      "display_name": "Qwen: Qwen3.6 Flash",
       "brand": "Qwen",
       "model_type": "chat",
-      "file": "bailian--qwen3-max.json"
+      "file": "qwen--qwen3.6-flash.json",
+      "sort_order": 50
     },
     {
-      "model_id": "bailian/qwen3-coder-next",
-      "display_name": "Qwen3 Coder Next",
+      "model_id": "qwen/qwen3.6-plus",
+      "display_name": "Qwen: Qwen3.6 Plus",
       "brand": "Qwen",
       "model_type": "chat",
-      "file": "bailian--qwen3-coder-next.json"
+      "file": "qwen--qwen3.6-plus.json",
+      "sort_order": 60
     },
     {
-      "model_id": "bailian/qwen3-coder-plus",
-      "display_name": "Qwen3 Coder Plus",
+      "model_id": "qwen/qwen3.7-max",
+      "display_name": "Qwen: Qwen3.7 Max",
       "brand": "Qwen",
       "model_type": "chat",
-      "file": "bailian--qwen3-coder-plus.json"
+      "file": "qwen--qwen3.7-max.json",
+      "sort_order": 70
     },
     {
-      "model_id": "bailian/qwen3-coder-flash",
-      "display_name": "Qwen3 Coder Flash",
-      "brand": "Qwen",
+      "model_id": "minimax/minimax-m2.5",
+      "display_name": "MiniMax: MiniMax M2.5",
+      "brand": "MiniMax",
       "model_type": "chat",
-      "file": "bailian--qwen3-coder-flash.json"
+      "file": "minimax--minimax-m2.5.json",
+      "sort_order": 80
     },
     {
-      "model_id": "bailian/qwen-plus",
-      "display_name": "Qwen Plus",
-      "brand": "Qwen",
+      "model_id": "minimax/minimax-m2.7",
+      "display_name": "MiniMax: MiniMax M2.7",
+      "brand": "MiniMax",
       "model_type": "chat",
-      "file": "bailian--qwen-plus.json"
+      "file": "minimax--minimax-m2.7.json",
+      "sort_order": 90
     },
     {
-      "model_id": "bailian/qwen-flash",
-      "display_name": "Qwen Flash",
-      "brand": "Qwen",
+      "model_id": "moonshot/kimi-k2.5",
+      "display_name": "Moonshot: Kimi K2.5",
+      "brand": "Moonshot",
       "model_type": "chat",
-      "file": "bailian--qwen-flash.json"
+      "file": "moonshot--kimi-k2.5.json",
+      "sort_order": 100
     },
     {
-      "model_id": "bailian/qwen-turbo",
-      "display_name": "Qwen Turbo",
-      "brand": "Qwen",
+      "model_id": "moonshot/kimi-k2.6",
+      "display_name": "Moonshot: Kimi K2.6",
+      "brand": "Moonshot",
       "model_type": "chat",
-      "file": "bailian--qwen-turbo.json"
-    },
-    {
-      "model_id": "bailian/qwen-max",
-      "display_name": "Qwen Max",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen-max.json"
-    },
-    {
-      "model_id": "bailian/qwen-vl-max",
-      "display_name": "Qwen VL Max",
-      "brand": "Qwen",
-      "model_type": "chat",
-      "file": "bailian--qwen-vl-max.json"
-    },
-    {
-      "model_id": "bailian/text-embedding-v4",
-      "display_name": "Qwen Text Embedding V4",
-      "brand": "Qwen",
-      "model_type": "embedding",
-      "file": "bailian--text-embedding-v4.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seed-2.0-code",
-      "display_name": "Doubao Seed 2.0 Code",
-      "brand": "Doubao",
-      "model_type": "chat",
-      "file": "volcengine--doubao-seed-2.0-code.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seed-2.0-lite",
-      "display_name": "Doubao Seed 2.0 Lite",
-      "brand": "Doubao",
-      "model_type": "chat",
-      "file": "volcengine--doubao-seed-2.0-lite.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seed-2.0-mini",
-      "display_name": "Doubao Seed 2.0 Mini",
-      "brand": "Doubao",
-      "model_type": "chat",
-      "file": "volcengine--doubao-seed-2.0-mini.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seed-2.0-pro",
-      "display_name": "Doubao Seed 2.0 Pro",
-      "brand": "Doubao",
-      "model_type": "chat",
-      "file": "volcengine--doubao-seed-2.0-pro.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seed-1-8",
-      "display_name": "Doubao Seed 1.8",
-      "brand": "Doubao",
-      "model_type": "chat",
-      "file": "volcengine--doubao-seed-1-8.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seed-1-6",
-      "display_name": "Doubao Seed 1.6",
-      "brand": "Doubao",
-      "model_type": "chat",
-      "file": "volcengine--doubao-seed-1-6.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seed-1-6-flash",
-      "display_name": "Doubao Seed 1.6 Flash",
-      "brand": "Doubao",
-      "model_type": "chat",
-      "file": "volcengine--doubao-seed-1-6-flash.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seed-1-6-vision",
-      "display_name": "Doubao Seed 1.6 Vision",
-      "brand": "Doubao",
-      "model_type": "chat",
-      "file": "volcengine--doubao-seed-1-6-vision.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seedream-5.0-lite",
-      "display_name": "Doubao Seedream 5.0 Lite",
-      "brand": "Doubao",
-      "model_type": "image",
-      "file": "volcengine--doubao-seedream-5.0-lite.json"
-    },
-    {
-      "model_id": "volcengine/doubao-seedream-4.5",
-      "display_name": "Doubao Seedream 4.5",
-      "brand": "Doubao",
-      "model_type": "image",
-      "file": "volcengine--doubao-seedream-4.5.json"
-    },
-    {
-      "model_id": "z-ai/glm-5.1",
-      "display_name": "Z.ai: GLM 5.1",
-      "brand": "Zhipu",
-      "model_type": "chat",
-      "file": "z-ai--glm-5.1.json"
+      "file": "moonshot--kimi-k2.6.json",
+      "sort_order": 110
     },
     {
       "model_id": "z-ai/glm-5",
       "display_name": "Z.ai: GLM-5",
       "brand": "Zhipu",
       "model_type": "chat",
-      "file": "z-ai--glm-5.json"
+      "file": "z-ai--glm-5.json",
+      "sort_order": 120
     },
     {
-      "model_id": "z-ai/glm-5-turbo",
-      "display_name": "Z.ai: GLM-5-Turbo",
+      "model_id": "z-ai/glm-5.1",
+      "display_name": "Z.ai: GLM-5.1",
       "brand": "Zhipu",
       "model_type": "chat",
-      "file": "z-ai--glm-5-turbo.json"
-    },
-    {
-      "model_id": "z-ai/glm-5v-turbo",
-      "display_name": "GLM-5V-Turbo",
-      "brand": "Zhipu",
-      "model_type": "chat",
-      "file": "z-ai--glm-5v-turbo.json"
-    },
-    {
-      "model_id": "z-ai/glm-4.7-flashx",
-      "display_name": "Z.ai: GLM-4.7 FlashX",
-      "brand": "Zhipu",
-      "model_type": "chat",
-      "file": "z-ai--glm-4.7-flashx.json"
-    },
-    {
-      "model_id": "z-ai/glm-4.7-flash:free",
-      "display_name": "Z.ai: GLM-4.7-Flash (Free)",
-      "brand": "Zhipu",
-      "model_type": "chat",
-      "file": "z-ai--glm-4.7-flash:free.json"
-    },
-    {
-      "model_id": "z-ai/glm-4.7",
-      "display_name": "Z.ai: GLM 4.7",
-      "brand": "Zhipu",
-      "model_type": "chat",
-      "file": "z-ai--glm-4.7.json"
-    },
-    {
-      "model_id": "z-ai/glm-4.6",
-      "display_name": "Z.ai: GLM-4.6",
-      "brand": "Zhipu",
-      "model_type": "chat",
-      "file": "z-ai--glm-4.6.json"
-    },
-    {
-      "model_id": "minimax/minimax-m2.7",
-      "display_name": "MiniMax: MiniMax M2.7",
-      "brand": "Minimax",
-      "model_type": "chat",
-      "file": "minimax--minimax-m2.7.json"
-    },
-    {
-      "model_id": "minimax/minimax-m2.7-highspeed",
-      "display_name": "MiniMax: MiniMax M2.7 Highspeed",
-      "brand": "Minimax",
-      "model_type": "chat",
-      "file": "minimax--minimax-m2.7-highspeed.json"
-    },
-    {
-      "model_id": "minimax/minimax-m2.5",
-      "display_name": "MiniMax: MiniMax M2.5",
-      "brand": "Minimax",
-      "model_type": "chat",
-      "file": "minimax--minimax-m2.5.json"
-    },
-    {
-      "model_id": "minimax/minimax-m2.5-lightning",
-      "display_name": "MiniMax: MiniMax M2.5 Lightning",
-      "brand": "Minimax",
-      "model_type": "chat",
-      "file": "minimax--minimax-m2.5-lightning.json"
-    },
-    {
-      "model_id": "minimax/m2-her",
-      "display_name": "MiniMax: MiniMax M2 Her",
-      "brand": "Minimax",
-      "model_type": "chat",
-      "file": "minimax--m2-her.json"
-    },
-    {
-      "model_id": "minimax/minimax-m2.1",
-      "display_name": "MiniMax: MiniMax M2.1",
-      "brand": "Minimax",
-      "model_type": "chat",
-      "file": "minimax--minimax-m2.1.json"
-    },
-    {
-      "model_id": "minimax/minimax-m2.1-lightning",
-      "display_name": "MiniMax: MiniMax M2.1 Lightning",
-      "brand": "Minimax",
-      "model_type": "chat",
-      "file": "minimax--minimax-m2.1-lightning.json"
-    },
-    {
-      "model_id": "minimax/minimax-m2",
-      "display_name": "MiniMax: MiniMax M2",
-      "brand": "Minimax",
-      "model_type": "chat",
-      "file": "minimax--minimax-m2.json"
-    },
-    {
-      "model_id": "moonshotai/kimi-k2.6",
-      "display_name": "MoonshotAI: Kimi K2.6",
-      "brand": "MoonshotAI",
-      "model_type": "chat",
-      "file": "moonshotai--kimi-k2.6.json"
-    },
-    {
-      "model_id": "moonshotai/kimi-k2.5",
-      "display_name": "MoonshotAI: Kimi K2.5",
-      "brand": "MoonshotAI",
-      "model_type": "chat",
-      "file": "moonshotai--kimi-k2.5.json"
+      "file": "z-ai--glm-5.1.json",
+      "sort_order": 130
     }
   ],
   "providers": [
     "DeepSeek",
-    "OpenAI",
     "Qwen",
-    "Google",
-    "Anthropic",
-    "Doubao",
-    "Zhipu",
-    "Minimax",
-    "MoonshotAI",
-    "Grok"
+    "MiniMax",
+    "Moonshot",
+    "Zhipu"
   ],
   "statistics": {
     "by_provider": {
-      "DeepSeek": 3,
-      "OpenAI": 23,
-      "Qwen": 20,
-      "Google": 11,
-      "Anthropic": 6,
-      "Doubao": 10,
-      "Zhipu": 8,
-      "Minimax": 8,
-      "MoonshotAI": 2,
-      "Grok": 2
+      "DeepSeek": 2,
+      "Qwen": 5,
+      "MiniMax": 2,
+      "Moonshot": 2,
+      "Zhipu": 2
     },
     "by_type": {
-      "chat": 82,
-      "image": 7,
-      "embedding": 4
+      "chat": 13
     }
   }
 }

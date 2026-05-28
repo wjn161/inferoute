@@ -1,20 +1,18 @@
 {
   "model_id": "minimax/minimax-m2.7",
   "display_name": "MiniMax: MiniMax M2.7",
-  "brand": "Minimax",
+  "brand": "MiniMax",
   "model_type": "chat",
-  "description": "M2.7 delivers outstanding performance in real-world software engineering, including end-to-end complete project delivery, log analysis and bug triaging, code security, machine learning, and more. On the benchmark SWE-Pro, M2.7 scores 56.22%, nearly matching the level of Opus. This capability also extends to end-to-end complete project delivery scenarios (VIBE-Pro 55.6%) and deep understanding of complex engineering systems on Terminal Bench 2 (57.0%).",
+  "description": "M2.7 can autonomously build complex Agent Harnesses and tackle highly sophisticated productivity tasks through Agent Teams, complex Skills, and Tool Search.",
   "release_date": null,
   "specifications": {
     "context_window": 200000,
     "context_window_display": "200K",
-    "max_output_tokens": 131000,
+    "max_output_tokens": 131072,
     "max_output_tokens_display": "131K"
   },
   "capabilities": [
     "chat",
-    "function_calling",
-    "prompt_caching",
     "reasoning"
   ],
   "input_modalities": [
@@ -27,17 +25,17 @@
   "providers": [],
   "pricing": {
     "input_token": {
-      "price": 0.3,
+      "price": 0.30882353,
       "unit": "per_million_tokens",
-      "display": "$0.3/M"
+      "display": "$0.31/M"
     },
     "output_token": {
-      "price": 1.2,
+      "price": 1.23529412,
       "unit": "per_million_tokens",
-      "display": "$1.2/M"
+      "display": "$1.24/M"
     },
     "cache_read": {
-      "price": 0.06,
+      "price": 0.06176471,
       "unit": "per_million_tokens",
       "display": "$0.06/M"
     }
@@ -45,37 +43,16 @@
   "related_models": {
     "same_brand": [
       {
-        "model_id": "minimax/minimax-m2.7-highspeed",
-        "display_name": "MiniMax: MiniMax M2.7 Highspeed"
-      },
-      {
         "model_id": "minimax/minimax-m2.5",
         "display_name": "MiniMax: MiniMax M2.5"
-      },
-      {
-        "model_id": "minimax/minimax-m2.5-lightning",
-        "display_name": "MiniMax: MiniMax M2.5 Lightning"
       }
     ],
-    "similar": [
-      {
-        "model_id": "deepseek/deepseek-v4-flash",
-        "display_name": "DeepSeek V4 Flash"
-      },
-      {
-        "model_id": "deepseek/deepseek-v4-pro",
-        "display_name": "DeepSeek V4 Pro"
-      },
-      {
-        "model_id": "openai/gpt-5.5",
-        "display_name": "OpenAI: GPT-5.5"
-      }
-    ]
+    "similar": []
   },
   "code_examples": {
     "python": null,
     "curl": null,
     "nodejs": null
   },
-  "scraped_at": "2026-05-05T10:02:58.007Z"
+  "scraped_at": null
 }

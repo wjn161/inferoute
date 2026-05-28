@@ -1,0 +1,72 @@
+{
+  "model_id": "qwen/qwen3.5-flash",
+  "display_name": "Qwen: Qwen3.5 Flash",
+  "brand": "Qwen",
+  "model_type": "chat",
+  "description": "Qwen3.5 native vision-language Flash model, built on a hybrid architecture combining linear attention and a sparse mixture-of-experts design for higher inference efficiency. Both pure-text and multimodal performance leap forward versus the 3 series; delivers fast response while balancing inference speed and performance.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 65536,
+    "max_output_tokens_display": "65.5K"
+  },
+  "capabilities": [
+    "chat",
+    "reasoning",
+    "vision"
+  ],
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.02941176,
+      "unit": "per_million_tokens",
+      "display": "$0.03/M"
+    },
+    "output_token": {
+      "price": 0.29411765,
+      "unit": "per_million_tokens",
+      "display": "$0.29/M"
+    },
+    "cache_read": {
+      "price": 0.00294118,
+      "unit": "per_million_tokens",
+      "display": "$0.0029/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "qwen/qwen3.7-max",
+        "display_name": "Qwen: Qwen3.7 Max"
+      },
+      {
+        "model_id": "qwen/qwen3.6-plus",
+        "display_name": "Qwen: Qwen3.6 Plus"
+      },
+      {
+        "model_id": "qwen/qwen3.6-flash",
+        "display_name": "Qwen: Qwen3.6 Flash"
+      },
+      {
+        "model_id": "qwen/qwen3.5-plus",
+        "display_name": "Qwen: Qwen3.5 Plus"
+      }
+    ],
+    "similar": []
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": null
+}

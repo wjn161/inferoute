@@ -1,0 +1,71 @@
+{
+  "model_id": "qwen/qwen3.6-plus",
+  "display_name": "Qwen: Qwen3.6 Plus",
+  "brand": "Qwen",
+  "model_type": "chat",
+  "description": "Qwen3.6 native vision-language Plus model, delivering exceptional performance comparable to today's leading frontier models, with significantly improved results over the 3.5 series. The model is markedly enhanced in agentic coding, front-end programming, and vibe coding, as well as in multimodal universal recognition, OCR, and object localization. This version is functionally equivalent to the snapshot model qwen3.6-plus-2026-04-02.",
+  "release_date": null,
+  "specifications": {
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 65536,
+    "max_output_tokens_display": "65.5K"
+  },
+  "capabilities": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 0.29411765,
+      "unit": "per_million_tokens",
+      "display": "$0.29/M"
+    },
+    "output_token": {
+      "price": 1.76470588,
+      "unit": "per_million_tokens",
+      "display": "$1.76/M"
+    },
+    "cache_read": {
+      "price": 0.02941176,
+      "unit": "per_million_tokens",
+      "display": "$0.03/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [
+      {
+        "model_id": "qwen/qwen3.7-max",
+        "display_name": "Qwen: Qwen3.7 Max"
+      },
+      {
+        "model_id": "qwen/qwen3.6-flash",
+        "display_name": "Qwen: Qwen3.6 Flash"
+      },
+      {
+        "model_id": "qwen/qwen3.5-plus",
+        "display_name": "Qwen: Qwen3.5 Plus"
+      },
+      {
+        "model_id": "qwen/qwen3.5-flash",
+        "display_name": "Qwen: Qwen3.5 Flash"
+      }
+    ],
+    "similar": []
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": null
+}

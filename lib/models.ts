@@ -58,7 +58,7 @@ export interface ModelDetail {
     curl: string | null;
     nodejs: string | null;
   };
-  scraped_at: string;
+  scraped_at: string | null;
 }
 
 export interface ModelIndexEntry {
@@ -67,6 +67,7 @@ export interface ModelIndexEntry {
   brand: string;
   model_type: string;
   file: string;
+  sort_order: number;
 }
 
 export interface ModelIndex {

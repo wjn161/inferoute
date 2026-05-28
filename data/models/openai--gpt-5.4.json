@@ -1,0 +1,52 @@
+{
+  "model_id": "openai/gpt-5.4",
+  "display_name": "OpenAI: GPT-5.4",
+  "brand": "OpenAI",
+  "model_type": "chat",
+  "description": "OpenAI GPT-5.4 model",
+  "release_date": null,
+  "specifications": {
+    "context_window": 128000,
+    "context_window_display": "128K",
+    "max_output_tokens": 16384,
+    "max_output_tokens_display": "16.4K"
+  },
+  "capabilities": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 2.5,
+      "unit": "per_million_tokens",
+      "display": "$2.5/M"
+    },
+    "output_token": {
+      "price": 15.0,
+      "unit": "per_million_tokens",
+      "display": "$15/M"
+    },
+    "cache_read": {
+      "price": 0.25,
+      "unit": "per_million_tokens",
+      "display": "$0.25/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [],
+    "similar": []
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": null
+}

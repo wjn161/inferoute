@@ -67,7 +67,7 @@ const ModelDetailSchema = z.object({
     curl: z.string().nullable(),
     nodejs: z.string().nullable(),
   }),
-  scraped_at: z.string(),
+  scraped_at: z.string().nullable(),
 });
 
 const ModelIndexEntrySchema = z.object({
@@ -76,6 +76,7 @@ const ModelIndexEntrySchema = z.object({
   brand: z.string(),
   model_type: z.string(),
   file: z.string(),
+  sort_order: z.number(),
 });
 
 const ModelIndexSchema = z.object({

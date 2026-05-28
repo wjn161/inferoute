@@ -35,6 +35,7 @@ const logoMap: Record<string, string> = {
   Seed: "/providers/seed.svg",
   Kling: "/providers/kling.svg",
   MoonshotAI: "/providers/kimi.svg",
+  Moonshot: "/providers/kimi.svg",
   Bailian: "/providers/qwen.svg",
   Volcengine: "/providers/seed.svg",
   Doubao: "/providers/seed.svg",
@@ -190,13 +191,9 @@ export default function ModelList({ models }: ModelListProps) {
       );
     }
 
-    result = [...result].sort((a, b) => {
-      const aGlm5 = a.model_id.includes("glm-5") || a.model_id.includes("glm-5.");
-      const bGlm5 = b.model_id.includes("glm-5") || b.model_id.includes("glm-5.");
-      if (aGlm5 && !bGlm5) return -1;
-      if (!aGlm5 && bGlm5) return 1;
-      return a.display_name.localeCompare(b.display_name);
-    });
+    // Sorting is controlled by `sort_order` in data/models/_index.json,
+    // which determines the input order of `models`. Filtering preserves
+    // that order, so no client-side sort is required here.
 
     return result;
   }, [

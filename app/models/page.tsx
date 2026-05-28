@@ -1,5 +1,6 @@
 import type { ModelDetail } from "@/lib/models";
 import { loadModelIndex, loadModelDetail } from "@/lib/models-server";
+import { getOgImageUrl } from "@/lib/og";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import ModelList from "@/components/model-list";
@@ -7,8 +8,12 @@ import ModelList from "@/components/model-list";
 export default async function ModelsPage() {
   const index = await loadModelIndex();
 
+  const sortedEntries = [...index.models].sort(
+    (a, b) => a.sort_order - b.sort_order,
+  );
+
   const details: ModelDetail[] = [];
-  for (const entry of index.models) {
+  for (const entry of sortedEntries) {
     const [provider, modelId] = entry.model_id.split("/");
     const detail = await loadModelDetail(provider, modelId);
     if (detail) details.push(detail);
@@ -44,4 +49,31 @@ export default async function ModelsPage() {
 export const metadata = {
   title: "Model Catalog | inferoute",
   description: "Browse 90+ AI models across multiple providers. Compare pricing, context windows, and capabilities all in one place.",
+  alternates: {
+    canonical: "https://inferoute.ai/models",
+  },
+  openGraph: {
+    title: "90+ AI Models | inferoute",
+    description: "Browse 90+ AI models across multiple providers. Compare pricing, context windows, and capabilities.",
+    images: [{
+      url: getOgImageUrl({
+        title: "90+ AI Models",
+        description: "Compare pricing, context windows, and capabilities across DeepSeek, Qwen, Kimi, GLM & more.",
+      }),
+      width: 1200,
+      height: 630,
+      alt: "Inferoute Model Catalog",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "90+ AI Models | inferoute",
+    description: "Browse 90+ AI models across multiple providers.",
+    images: [
+      getOgImageUrl({
+        title: "90+ AI Models",
+        description: "Compare pricing, context windows, and capabilities across DeepSeek, Qwen, Kimi, GLM & more.",
+      }),
+    ],
+  },
 };

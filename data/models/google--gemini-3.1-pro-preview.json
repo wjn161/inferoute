@@ -1,0 +1,52 @@
+{
+  "model_id": "google/gemini-3.1-pro-preview",
+  "display_name": "Google: Gemini 3.1 Pro Preview",
+  "brand": "Google",
+  "model_type": "chat",
+  "description": "Google Gemini 3.1 Pro preview model",
+  "release_date": null,
+  "specifications": {
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 65536,
+    "max_output_tokens_display": "65.5K"
+  },
+  "capabilities": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "supported_protocols": [],
+  "providers": [],
+  "pricing": {
+    "input_token": {
+      "price": 2.0,
+      "unit": "per_million_tokens",
+      "display": "$2/M"
+    },
+    "output_token": {
+      "price": 12.0,
+      "unit": "per_million_tokens",
+      "display": "$12/M"
+    },
+    "cache_read": {
+      "price": 0.2,
+      "unit": "per_million_tokens",
+      "display": "$0.2/M"
+    }
+  },
+  "related_models": {
+    "same_brand": [],
+    "similar": []
+  },
+  "code_examples": {
+    "python": null,
+    "curl": null,
+    "nodejs": null
+  },
+  "scraped_at": null
+}

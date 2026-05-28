@@ -1,15 +1,15 @@
 {
   "model_id": "deepseek/deepseek-v4-flash",
-  "display_name": "DeepSeek V4 Flash",
+  "display_name": "DeepSeek: DeepSeek V4 Flash",
   "brand": "DeepSeek",
   "model_type": "chat",
-  "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and high-throughput workloads, while maintaining strong reasoning and coding performance.",
-  "release_date": "2026-04-24",
+  "description": "Lightweight and efficient MoE model with 284B total parameters and 13B activated parameters, natively supporting million-token ultra-long context. Offers fast inference, low latency, and low call cost with balanced overall capability. Targeted at high-concurrency, lightweight tasks and well suited for everyday conversation, content creation, basic RAG, and batch copy processing in mainstream cost-sensitive scenarios.",
+  "release_date": null,
   "specifications": {
-    "context_window": null,
-    "context_window_display": null,
-    "max_output_tokens": null,
-    "max_output_tokens_display": null
+    "context_window": 1000000,
+    "context_window_display": "1M",
+    "max_output_tokens": 393216,
+    "max_output_tokens_display": "393K"
   },
   "capabilities": [
     "chat"
@@ -22,9 +22,30 @@
   ],
   "supported_protocols": [],
   "providers": [],
-  "pricing": {},
+  "pricing": {
+    "input_token": {
+      "price": 0.14705882,
+      "unit": "per_million_tokens",
+      "display": "$0.15/M"
+    },
+    "output_token": {
+      "price": 0.29411765,
+      "unit": "per_million_tokens",
+      "display": "$0.29/M"
+    },
+    "cache_read": {
+      "price": 0.02941176,
+      "unit": "per_million_tokens",
+      "display": "$0.03/M"
+    }
+  },
   "related_models": {
-    "same_brand": [],
+    "same_brand": [
+      {
+        "model_id": "deepseek/deepseek-v4-pro",
+        "display_name": "DeepSeek: DeepSeek V4 Pro"
+      }
+    ],
     "similar": []
   },
   "code_examples": {
@@ -32,5 +53,5 @@
     "curl": null,
     "nodejs": null
   },
-  "scraped_at": "2026-05-05T10:18:52.326Z"
+  "scraped_at": null
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { getOgImageUrl } from "@/lib/og";
 import "./globals.css";
 
 const inter = Inter({
@@ -45,6 +46,9 @@ export const metadata: Metadata = {
   authors: [{ name: "inferoute" }],
   creator: "inferoute",
   publisher: "inferoute",
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
     type: "website",
     url: siteUrl,
@@ -52,12 +56,29 @@ export const metadata: Metadata = {
     description:
       "An OpenAI-compatible AI gateway for lower cost, faster fallback, and full control across modern open models.",
     siteName: "inferoute",
+    images: [
+      {
+        url: getOgImageUrl({
+          title: "Route every prompt to the best open model",
+          description: "One API. 90+ models. Lower cost, faster fallback.",
+        }),
+        width: 1200,
+        height: 630,
+        alt: "Inferoute — OpenAI-compatible AI gateway",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Inferoute | Route every prompt to the best open model",
     description:
       "An OpenAI-compatible AI gateway for lower cost, faster fallback, and full control across modern open models.",
+    images: [
+      getOgImageUrl({
+        title: "Route every prompt to the best open model",
+        description: "One API. 90+ models. Lower cost, faster fallback.",
+      }),
+    ],
   },
   robots: {
     index: true,
