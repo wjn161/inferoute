@@ -51,9 +51,9 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold text-ink">Connect</h3>
           <div className="mt-3 flex flex-col gap-2">
-            <a href="https://discord.gg/inferoute-ai" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://discord.gg/37wuQASWN" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">Discord</a>
             <a href="https://github.com/inferoute-ai" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://x.com/inferoute-ai" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://x.com/inferoute_ai" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">X</a>
             <a href="https://youtube.com/@inferoute" className="text-sm text-muted transition hover:text-ink" target="_blank" rel="noopener noreferrer">YouTube</a>
           </div>
         </div>
