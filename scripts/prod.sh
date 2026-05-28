@@ -36,6 +36,12 @@ build() {
   cyan "[2/2] Building production bundle..."
   cd "$SCRIPT_DIR"
   pnpm build
+
+  # Next.js standalone doesn't copy static assets automatically.
+  # Copy .next/static into the standalone directory so JS/CSS/SVG etc. resolve.
+  cyan "      Copying static assets into standalone..."
+  cp -R "$SCRIPT_DIR/.next/static" "$SCRIPT_DIR/.next/standalone/.next/static"
+
   green "Build OK — standalone: .next/standalone"
 }
 
